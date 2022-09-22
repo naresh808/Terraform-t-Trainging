@@ -1,0 +1,17 @@
+ds-desc
+
+How u r deploying terraform providers ?
+we will deploy terraform providers in main.tf file
+
+depolying same service in multiple regions and azs
+
+to see verbose mode
+
+TF_LOG=TRACE
+
+
+#setup the aws-cli in machine and configure access key and secrete key
+
+
+terarform apply -auto-approve (--auto-approve)
+terraform destroy --auto-approve

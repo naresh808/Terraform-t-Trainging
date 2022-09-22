@@ -1,0 +1,26 @@
+In interviews most of the people will aska bout work space
+How can we see work spaces in terraform
+
+#terraform workspce list
+setup the new workspacce or creation of new workspace
+#terarform workspace new staging
+ to go into from one workspce to another workspace
+#terraform workspace select default(workspacename)
+
+ls -lrt
+
+as we used our own workspace over than default so state will come with the extension of .d
+
+#terraform.tfstate.d
+to see state file/   staefile will show what are the serveices were deployed
+#terraform state list
+#
+#
+#
+#
+#
+#now chage the work space and look for state file it won't show anything because we changed workspace right. even it is in same folder also it won't show state file
+
+Now go to default workspace and try to run terraform code again.   it runs and deployes teh new server as mention login in main.tf  as if it matches workspace launch in smae region else launch in another region (look at login in main.tf file)
+
+if we want to destory resorces then we to be there in inside of that particular workspace
