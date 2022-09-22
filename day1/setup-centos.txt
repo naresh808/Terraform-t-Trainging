@@ -1,0 +1,36 @@
+in-centos.txt
+#link page (https://learn.hashicorp.com/tutorials/terraform/install-cli)
+
+
+
+sudo yum install -y yum-utils
+
+sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo
+
+sudo yum -y install terraform
+
+terraform -v
+
+
+
+### if gets issues in terraform plan
+
+##install docker  #(https://docs.docker.com/engine/install/centos/)
+ sudo yum install -y yum-utils
+ sudo yum-config-manager \
+    --add-repo \
+    https://download.docker.com/linux/centos/docker-ce.repo
+ sudo yum install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+
+
+
+
+
+## removing the by default installed podman
+sudo yum erase podman buildah -y
+
+#now install docker again
+
+
+systemctl start docker
+systemctl status docker

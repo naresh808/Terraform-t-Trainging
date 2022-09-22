@@ -1,0 +1,12 @@
+in-ubuntu.txt
+terraform init
+install docker
+
+#sudo apt  install docker.io
+#sudo groupadd docker
+#sudo usermod -aG docker $USER
+exit from screen and relogin it work
+
+
+terraform plan
+terraform apply

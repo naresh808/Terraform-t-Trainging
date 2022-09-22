@@ -1,0 +1,20 @@
+terraform init
+terraform validate
+terraform plan
+terraform plan -out docker-nginx ##putting the plan output into another file
+terraform apply
+terraform -auto-apply
+
+
+# after apply it will execute and deploy the docker cintaier and generate terraform state file
+
+#terraform.tfstate (very important file and  the full data of that container )
+
+#docker ps   (command to see contaier running)
+
+terraform plan -destroy
+terraform destroy
+
+
+#docker ps (container will be no there because we destroyed the terrafrom setup)
+github url ttt https://github.com/TrieTreeTechnologies/terraform-2022
